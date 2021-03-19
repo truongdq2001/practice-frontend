@@ -1,0 +1,6 @@
+export const ROUTERS = {
+  HOME: 'HOME',
+  PRODUCTS: 'PRODUCTS',
+  SPLASHSCREEN: 'SPLASHSCREEN',
+  SIGNIN: 'SIGNIN',
+};
