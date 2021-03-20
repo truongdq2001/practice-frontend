@@ -62,6 +62,7 @@ export default function IntroScreen() {
         renderDoneButton={renderButtonDone}
         renderNextButton={renderButtonNext}
         onDone={() => navigate(ROUTERS.HOME)}
+        onSkip={() => navigate(ROUTERS.HOME)}
       />
     </View>
   );
