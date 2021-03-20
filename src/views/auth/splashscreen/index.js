@@ -8,7 +8,7 @@ import {ROUTERS} from '../../../router/routerType';
 import {useState} from 'react';
 const width = Dimensions.get('window').width;
 export default function SplashScreen() {
-  const [progress, setProgess] = useState(0);
+  const [progress, setProgress] = useState(0);
   const {navigate} = useNavigation();
   useEffect(() => {
     animate();
@@ -16,19 +16,19 @@ export default function SplashScreen() {
 
   useEffect(() => {
     if (progress === 1) {
-      navigate(ROUTERS.SIGNIN);
+      // navigate(ROUTERS.SIGNIN);
     }
   }, [progress]);
   function animate() {
     let fProgress = 0;
-    setProgess(fProgress);
+    setProgress(fProgress);
     setTimeout(() => {
       setInterval(() => {
         fProgress += Math.random() / 5;
         if (fProgress > 1) {
           fProgress = 1;
         }
-        setProgess(fProgress);
+        setProgress(fProgress);
       }, 500);
     }, 100);
   }
