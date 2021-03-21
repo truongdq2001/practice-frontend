@@ -7,4 +7,5 @@ export const images = {
   intro3: require('./sources/intro3.png'),
   logoSignIn: require('./sources/background_sign_in.png'),
   logoSignUp: require('./sources/background_sign_up.png'),
+  iconBack: require('./sources/goBackIcon.png'),
 };

@@ -118,4 +118,22 @@ export default StyleSheet.create({
     color: '#ffffff',
     fontWeight: '700',
   },
+  viewButtonBack: {
+    position: 'absolute',
+    top: scale(10),
+    left: scale(20),
+    width: scale(48),
+    height: scale(48),
+    borderRadius: scale(48),
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderColor: '#BEBAB3',
+    borderWidth: 1,
+    borderStyle: 'solid',
+  },
+  iconBack: {
+    width: scale(16),
+    height: scale(16),
+  },
 });
