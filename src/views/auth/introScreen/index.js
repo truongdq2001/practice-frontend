@@ -1,5 +1,12 @@
 import React from 'react';
-import {View, Text, Image, StatusBar} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  StatusBar,
+  TouchableOpacity,
+  SafeAreaView,
+} from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import styles from './styles';
 import {images} from '../../../assets/images';
@@ -31,23 +38,39 @@ const dataIntro = [
 ];
 export default function IntroScreen() {
   const {navigate} = useNavigation();
+  const slider = AppIntroSlider | undefined;
   const renderItem = ({item}) => {
     return (
       <View style={[styles.slide, {backgroundColor: item?.backgroundColor}]}>
+        <TouchableOpacity
+          onPress={() => handleEventSkip()}
+          style={styles.viewButtonSkip}>
+          <Text style={styles.textSkip}>Skip</Text>
+        </TouchableOpacity>
         <Image source={item.image} style={styles.image} />
         <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.text}>{item.text}</Text>
       </View>
     );
   };
+
+  const handleEventSkip = () => {
+    navigate(ROUTERS.HOME);
+  };
+
   const renderButtonNext = () => {
-    return <Text style={styles.text}>NEXT</Text>;
+    return (
+      <View style={styles.viewButtonNext}>
+        <Text style={styles.textButtonNext}>Next</Text>
+      </View>
+    );
   };
   const renderButtonDone = () => {
-    return <Text style={styles.text}>DONE</Text>;
-  };
-  const renderButtonSkip = () => {
-    return <Text style={styles.text}>SKIP</Text>;
+    return (
+      <View style={styles.viewButtonNext}>
+        <Text style={styles.textButtonNext}>Let’s Start</Text>
+      </View>
+    );
   };
 
   return (
@@ -57,12 +80,11 @@ export default function IntroScreen() {
         keyExtractor={item => item.title}
         renderItem={renderItem}
         data={dataIntro}
-        showSkipButton
-        renderSkipButton={renderButtonSkip}
         renderDoneButton={renderButtonDone}
         renderNextButton={renderButtonNext}
+        bottomButton
+        activeDotStyle={{backgroundColor: '#65AAEA'}}
         onDone={() => navigate(ROUTERS.HOME)}
-        onSkip={() => navigate(ROUTERS.HOME)}
       />
     </View>
   );
