@@ -84,7 +84,7 @@ export default function IntroScreen() {
         renderNextButton={renderButtonNext}
         bottomButton
         activeDotStyle={{backgroundColor: '#65AAEA'}}
-        onDone={() => navigate(ROUTERS.HOME)}
+        onDone={() => navigate(ROUTERS.SIGNIN)}
       />
     </View>
   );
