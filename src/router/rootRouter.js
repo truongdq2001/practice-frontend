@@ -1,27 +1,39 @@
-import React from 'react';
+import React, {createRef, useRef} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
 import {ROUTERS} from './routerType';
-import Home from '../views/Home';
-import Products from '../views/Products';
-import SplashScreen from '../views/auth/splashscreen';
-import SignIn from '../views/auth/signin';
-import IntroScreen from '../views/auth/introScreen';
+import MainStack from './mainStack';
+import AuthStack from './authStack';
 
 export default function RootRouter() {
+  const ref = createRef();
+  const routerNameRef = useRef();
   const Stack = createStackNavigator();
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      ref={ref}
+      onReady={() => {
+        routerNameRef.current = ref.current.getCurrentRoute().name;
+      }}
+      onStateChange={() => {
+        const previousRouteName = routerNameRef.current;
+        const currentRouteName = ref.current.getCurrentRoute().name;
+        console.log(
+          'ScreenTracking : prev,next : ',
+          previousRouteName,
+          currentRouteName,
+        );  
+        routerNameRef.current = currentRouteName;
+      }}>
       <Stack.Navigator
-        initialRouteName={ROUTERS.INTROSCREEN}
+        initialRouteName={ROUTERS.AUTHSTACK}
         screenOptions={{
           headerShown: false,
+          gestureEnabled: true,
+          ...TransitionPresets.SlideFromRightIOS,
         }}>
-        <Stack.Screen name={ROUTERS.HOME} component={Home} />
-        <Stack.Screen name={ROUTERS.PRODUCTS} component={Products} />
-        <Stack.Screen name={ROUTERS.SPLASHSCREEN} component={SplashScreen} />
-        <Stack.Screen name={ROUTERS.SIGNIN} component={SignIn} />
-        <Stack.Screen name={ROUTERS.INTROSCREEN} component={IntroScreen} />
+        <Stack.Screen name={ROUTERS.MAINSTACK} component={MainStack} />
+        <Stack.Screen name={ROUTERS.AUTHSTACK} component={AuthStack} />
       </Stack.Navigator>
     </NavigationContainer>
   );
