@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {scale} from '../../../hooks/scale';
 export default StyleSheet.create({
   root: {
     width: '100%',
@@ -6,37 +7,115 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'white',
   },
-  viewTop: {
-    height: 100,
+  viewLogo: {
+    marginTop: scale(50),
+  },
+  viewText: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: scale(15),
   },
   textTitle: {
-    fontSize: 25,
+    fontSize: scale(24),
+    lineHeight: scale(32),
+    fontWeight: 'bold',
+    color: '#3C3A36',
+  },
+  textSub: {
+    fontWeight: '400',
+    fontSize: scale(14),
+    lineHeight: scale(21),
+    marginTop: scale(12.5),
+  },
+  viewSocials: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  viewIconSocials: {
+    backgroundColor: '#65AAEA',
+    width: scale(40),
+    height: scale(40),
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: scale(8),
+    marginHorizontal: scale(10),
   },
   viewInput: {
     width: '100%',
-    paddingHorizontal: 30,
-  },
-  styleInput: {
-    borderBottomWidth: 1,
-    borderBottomColor: 'green',
-    marginVertical: 10,
-    fontSize: 18,
-  },
-  viewLogo: {
-    width: 200,
-    height: 200,
-  },
-  viewButton: {
+    marginVertical: scale(16),
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#00cc66',
-    borderRadius: 8,
-    marginTop: 20,
   },
-  textSignIn: {
-    fontSize: 20,
+  viewInputContain: {
+    width: '90%',
+  },
+  inputEmail: {
+    borderWidth: 1,
+    borderStyle: 'solid',
+    borderColor: '#BEBAB3',
+    borderRadius: scale(12),
+    padding: scale(16),
+    fontSize: scale(14),
+    lineHeight: scale(21),
+    fontWeight: '400',
+    color: '#78746D',
+    marginTop: scale(10),
+  },
+  viewInputPassword: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    position: 'relative',
+    justifyContent: 'space-between',
+    marginTop: scale(20),
+  },
+  viewIconHide: {
+    position: 'absolute',
+    right: scale(20),
+  },
+  inputPassword: {
+    borderWidth: 1,
+    width: '100%',
+    borderStyle: 'solid',
+    borderColor: '#BEBAB3',
+    borderRadius: scale(12),
+    padding: scale(16),
+    fontSize: scale(14),
+    lineHeight: scale(21),
+    fontWeight: '400',
+    color: '#78746D',
+  },
+
+  textLink: {
+    fontWeight: '700',
+    fontSize: scale(14),
+    lineHeight: scale(16),
+    color: '#78746D',
+  },
+  buttonLogin: {
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonLoginContain: {
+    width: '90%',
+    backgroundColor: '#E3562A',
+    borderRadius: scale(16),
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: scale(16),
+    paddingHorizontal: scale(32),
+    marginVertical: scale(16),
+  },
+  textLinkLogin: {
+    fontSize: scale(16),
+    lineHeight: scale(18),
     color: '#ffffff',
-    paddingVertical: 10,
-    paddingHorizontal: 40,
+    fontWeight: '700',
   },
 });
