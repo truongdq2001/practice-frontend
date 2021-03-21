@@ -32,7 +32,7 @@ export default function SignIn() {
     checkScreen ? setCheckScreen(false) : setCheckScreen(true);
   };
   const handleSubmit = () => {
-    navigate(ROUTERS.HOME);
+    navigate(ROUTERS.MAINSTACK);
   };
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
