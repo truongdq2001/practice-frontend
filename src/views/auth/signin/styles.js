@@ -17,14 +17,14 @@ export default StyleSheet.create({
     marginVertical: scale(15),
   },
   textTitle: {
-    fontSize: scale(24),
+    fontSize: scale(30),
     lineHeight: scale(32),
     fontWeight: 'bold',
     color: '#3C3A36',
   },
   textSub: {
     fontWeight: '400',
-    fontSize: scale(14),
+    fontSize: scale(18),
     lineHeight: scale(21),
     marginTop: scale(12.5),
   },
@@ -59,7 +59,7 @@ export default StyleSheet.create({
     borderColor: '#BEBAB3',
     borderRadius: scale(12),
     padding: scale(16),
-    fontSize: scale(14),
+    fontSize: scale(18),
     lineHeight: scale(21),
     fontWeight: '400',
     color: '#78746D',
@@ -83,7 +83,7 @@ export default StyleSheet.create({
     borderColor: '#BEBAB3',
     borderRadius: scale(12),
     padding: scale(16),
-    fontSize: scale(14),
+    fontSize: scale(18),
     lineHeight: scale(21),
     fontWeight: '400',
     color: '#78746D',
@@ -91,7 +91,7 @@ export default StyleSheet.create({
 
   textLink: {
     fontWeight: '700',
-    fontSize: scale(14),
+    fontSize: scale(16),
     lineHeight: scale(16),
     color: '#78746D',
   },
