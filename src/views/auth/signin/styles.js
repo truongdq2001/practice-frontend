@@ -50,44 +50,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  viewInputContain: {
-    width: '90%',
-  },
-  inputEmail: {
-    borderWidth: 1,
-    borderStyle: 'solid',
-    borderColor: '#BEBAB3',
-    borderRadius: scale(12),
-    padding: scale(16),
-    fontSize: scale(18),
-    lineHeight: scale(21),
-    fontWeight: '400',
-    color: '#78746D',
-    marginTop: scale(10),
-  },
-  viewInputPassword: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    position: 'relative',
-    justifyContent: 'space-between',
-    marginTop: scale(20),
-  },
-  viewIconHide: {
-    position: 'absolute',
-    right: scale(20),
-  },
-  inputPassword: {
-    borderWidth: 1,
-    width: '100%',
-    borderStyle: 'solid',
-    borderColor: '#BEBAB3',
-    borderRadius: scale(12),
-    padding: scale(16),
-    fontSize: scale(18),
-    lineHeight: scale(21),
-    fontWeight: '400',
-    color: '#78746D',
-  },
 
   textLink: {
     fontWeight: '700',
@@ -96,44 +58,24 @@ export default StyleSheet.create({
     color: '#78746D',
   },
   buttonLogin: {
-    width: '100%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  buttonLoginContain: {
     width: '90%',
-    backgroundColor: '#E3562A',
-    borderRadius: scale(16),
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: scale(16),
-    paddingHorizontal: scale(32),
-    marginVertical: scale(16),
+    marginVertical: scale(10),
   },
-  textLinkLogin: {
+
+  textBtnLogin: {
     fontSize: scale(16),
     lineHeight: scale(18),
     color: '#ffffff',
     fontWeight: '700',
   },
-  viewButtonBack: {
-    position: 'absolute',
-    top: scale(10),
-    left: scale(20),
-    width: scale(48),
-    height: scale(48),
-    borderRadius: scale(48),
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderColor: '#BEBAB3',
-    borderWidth: 1,
-    borderStyle: 'solid',
+  viewWrapInput: {
+    width: '90%',
   },
-  iconBack: {
-    width: scale(16),
-    height: scale(16),
+  styleCustomInput: {
+    borderWidth: 1,
+    marginVertical: scale(5),
   },
 });
