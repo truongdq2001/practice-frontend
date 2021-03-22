@@ -16,9 +16,9 @@ export default function HomeStack() {
         name={ROUTERS.COURSESCREEN}
         component={CourseScreen}
         options={({route}) => ({
-          iconActive: <Icon name="home" color="silver" size={30} />,
-          iconInActive: <Icon name="home" color="#E3562A" size={30} />,
-          title: 'Home',
+          iconActive: <Icon name="book" color="silver" size={30} />,
+          iconInActive: <Icon name="book" color="#E3562A" size={30} />,
+          title: 'Courses',
           tabBarVisible: false,
         })}
       />
