@@ -1,13 +1,6 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  Dimensions,
-  TouchableOpacity,
-} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {scale} from '../../hooks/scale';
-const {height} = Dimensions.get('window');
 export default function CustomTabs({state, descriptors, navigation}) {
   return (
     <View style={styles.rootTab}>

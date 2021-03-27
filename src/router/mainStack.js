@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {ROUTERS} from './routerType';
-import HomeStack from './homeStack';
+import homeStack from './homeStack';
 export default function MAIN_STACK() {
   const Stack = createStackNavigator();
   return (
@@ -10,7 +10,7 @@ export default function MAIN_STACK() {
       screenOptions={{
         headerShown: false,
       }}>
-      <Stack.Screen name={ROUTERS.HOME_STACK} component={HomeStack} />
+      <Stack.Screen name={ROUTERS.HOME_STACK} component={homeStack} />
     </Stack.Navigator>
   );
 }

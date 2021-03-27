@@ -31,7 +31,6 @@ const dataIntro = [
 ];
 export default function INTRO_SCREEN() {
   const {navigate} = useNavigation();
-  const slider = AppIntroSlider | undefined;
   const renderItem = ({item}) => {
     return (
       <View style={[styles.slide, {backgroundColor: item?.backgroundColor}]}>
@@ -48,7 +47,7 @@ export default function INTRO_SCREEN() {
   };
 
   const handleEventSkip = () => {
-    navigate(ROUTERS.HOME);
+    navigate(ROUTERS.MAIN_STACK);
   };
 
   const renderButtonNext = () => {

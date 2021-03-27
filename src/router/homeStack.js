@@ -6,12 +6,15 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CourseScreen from '../views/Home/coursesScreen';
 import CustomTabs from './customTabs';
 import Icon from 'react-native-vector-icons/Feather';
-export default function HOME_STACK() {
+export default function HomeStack() {
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator
-      initialRouteName={ROUTERS.PROFILE_SCREEN}
-      tabBar={props => <CustomTabs {...props} />}>
+      initialRouteName={ROUTERS.HOME_STACK}
+      tabBar={props => <CustomTabs {...props} />}
+      tabBarOptions={{
+        keyboardHidesTabBar: true,
+      }}>
       <Tab.Screen
         name={ROUTERS.COURSE_SCREEN}
         component={CourseScreen}
