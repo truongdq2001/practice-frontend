@@ -1,9 +1,9 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-
-export default function SETTING_SCREEN() {
+import {View, Text, StatusBar} from 'react-native';
+import styles from './styles';
+export default function SettingScreen() {
   return (
-    <View>
+    <View style={styles.root}>
       <Text>SETTING_SCREEN</Text>
     </View>
   );
