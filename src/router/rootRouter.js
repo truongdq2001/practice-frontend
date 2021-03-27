@@ -22,18 +22,18 @@ export default function RootRouter() {
           'ScreenTracking : prev,next : ',
           previousRouteName,
           currentRouteName,
-        );  
+        );
         routerNameRef.current = currentRouteName;
       }}>
       <Stack.Navigator
-        initialRouteName={ROUTERS.AUTHSTACK}
+        initialRouteName={ROUTERS.AUTH_STACK}
         screenOptions={{
           headerShown: false,
           gestureEnabled: true,
           ...TransitionPresets.SlideFromRightIOS,
         }}>
-        <Stack.Screen name={ROUTERS.MAINSTACK} component={MainStack} />
-        <Stack.Screen name={ROUTERS.AUTHSTACK} component={AuthStack} />
+        <Stack.Screen name={ROUTERS.MAIN_STACK} component={MainStack} />
+        <Stack.Screen name={ROUTERS.AUTH_STACK} component={AuthStack} />
       </Stack.Navigator>
     </NavigationContainer>
   );

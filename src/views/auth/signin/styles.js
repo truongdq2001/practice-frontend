@@ -1,5 +1,7 @@
 import {StyleSheet} from 'react-native';
+import {color} from 'react-native-reanimated';
 import {scale} from '../../../hooks/scale';
+import {colors} from '../../../themes/colors';
 export default StyleSheet.create({
   root: {
     width: '100%',
@@ -76,6 +78,20 @@ export default StyleSheet.create({
   },
   styleCustomInput: {
     borderWidth: 1,
-    marginVertical: scale(5),
+    marginVertical: scale(8),
+  },
+  viewBtnBack: {
+    position: 'absolute',
+    top: scale(10),
+    left: scale(20),
+    width: scale(50),
+    height: scale(50),
+    backgroundColor: colors.white,
+    borderWidth: 1,
+    borderColor: colors.border_color,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: scale(50),
   },
 });

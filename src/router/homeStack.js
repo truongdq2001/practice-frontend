@@ -6,14 +6,14 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import CourseScreen from '../views/Home/coursesScreen';
 import CustomTabs from './customTabs';
 import Icon from 'react-native-vector-icons/Feather';
-export default function HomeStack() {
+export default function HOME_STACK() {
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator
-      initialRouteName={ROUTERS.PROFILESCREEN}
+      initialRouteName={ROUTERS.PROFILE_SCREEN}
       tabBar={props => <CustomTabs {...props} />}>
       <Tab.Screen
-        name={ROUTERS.COURSESCREEN}
+        name={ROUTERS.COURSE_SCREEN}
         component={CourseScreen}
         options={({route}) => ({
           iconActive: <Icon name="book" color="silver" size={30} />,
@@ -23,7 +23,7 @@ export default function HomeStack() {
         })}
       />
       <Tab.Screen
-        name={ROUTERS.PROFILESCREEN}
+        name={ROUTERS.PROFILE_SCREEN}
         component={ProfileScreen}
         options={({route}) => ({
           iconActive: <Icon name="user" color="silver" size={30} />,
@@ -33,7 +33,7 @@ export default function HomeStack() {
         })}
       />
       <Tab.Screen
-        name={ROUTERS.SETTINGSCREEN}
+        name={ROUTERS.SETTING_SCREEN}
         component={SettingScreen}
         options={({route}) => ({
           iconActive: <Icon name="settings" color="silver" size={30} />,

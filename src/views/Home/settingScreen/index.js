@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-export default function SettingScreen() {
+export default function SETTING_SCREEN() {
   return (
     <View>
-      <Text>SettingScreen</Text>
+      <Text>SETTING_SCREEN</Text>
     </View>
   );
 }

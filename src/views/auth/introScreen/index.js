@@ -29,7 +29,7 @@ const dataIntro = [
     backgroundColor: '#ffffff',
   },
 ];
-export default function IntroScreen() {
+export default function INTRO_SCREEN() {
   const {navigate} = useNavigation();
   const slider = AppIntroSlider | undefined;
   const renderItem = ({item}) => {
