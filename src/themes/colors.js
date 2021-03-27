@@ -8,4 +8,5 @@ export const colors = {
   toggle: '#5BA092',
   textSub: '#78746D',
   black: '#000000',
+  normal: '#E9E9E9',
 };

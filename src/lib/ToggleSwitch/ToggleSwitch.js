@@ -101,7 +101,7 @@ export default class ToggleSwitch extends React.Component {
       margin: Platform.OS === 'web' ? 0 : 4,
       left: Platform.OS === 'web' ? 4 : -10,
       position: 'absolute',
-      backgroundColor: this.props.circleColor,
+      backgroundColor: colors.normal,
       transform: [{translateX: this.offsetX}],
       width: this.dimensions.circleWidth * 1.75,
       height: this.dimensions.circleHeight * 1.75,
