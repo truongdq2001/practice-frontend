@@ -5,4 +5,7 @@ export const colors = {
   border_color: '#BEBAB3',
   title: '#3C3A36',
   border_bg: '#65AAEA',
+  toggle: '#5BA092',
+  textSub: '#78746D',
+  black: '#000000',
 };

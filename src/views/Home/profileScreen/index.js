@@ -8,8 +8,9 @@ import {useNavigation} from '@react-navigation/native';
 import Avatar from '../../../components/Avatar';
 import {images} from '../../../assets/images';
 import {ROUTERS} from '../../../router/routerType';
+import BoxIcon from '../../../components/boxIcon';
 export default function ProfileScreen() {
-  const {navigate} = useNavigation();
+  const {navigate, goBack} = useNavigation();
 
   function RedirectItem({title}) {
     return (
@@ -25,12 +26,14 @@ export default function ProfileScreen() {
       <StatusBar backgroundColor={colors.white} barStyle="dark-content" />
       <CustomHeader
         childrenLeft={
-          <View style={styles.viewIconLeft}>
-            <Icon name="chevron-left" size={25} />
-          </View>
+          <BoxIcon
+            border
+            size={40}
+            icon={<Icon name="chevron-left" size={25} />}
+          />
         }
         title="Profile"
-        actionLeft={() => navigate(ROUTERS.AUTH_STACK)}
+        actionLeft={() => goBack()}
       />
       <View style={styles.viewBody}>
         <Avatar

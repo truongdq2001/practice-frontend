@@ -20,8 +20,7 @@ export default function RootRouter() {
         const currentRouteName = ref.current.getCurrentRoute().name;
         console.log(
           'ScreenTracking : prev,next : ',
-          previousRouteName,
-          currentRouteName,
+          previousRouteName + ' ==> ' + currentRouteName,
         );
         routerNameRef.current = currentRouteName;
       }}>
