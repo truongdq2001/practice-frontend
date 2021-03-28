@@ -12,9 +12,9 @@ import BoxIcon from '../../../components/boxIcon';
 export default function ProfileScreen() {
   const {navigate, goBack} = useNavigation();
 
-  function RedirectItem({title}) {
+  function RedirectItem({title, action}) {
     return (
-      <TouchableOpacity style={styles.rootRedirect}>
+      <TouchableOpacity onPress={action} style={styles.rootRedirect}>
         <Text style={styles.textRedirect}>{title}</Text>
       </TouchableOpacity>
     );
@@ -41,7 +41,10 @@ export default function ProfileScreen() {
           source={images.user}
           size={150}
         />
-        <RedirectItem title="Your Courses" />
+        <RedirectItem
+          title="Your Courses"
+          action={() => navigate(ROUTERS.YOUR_COURSES)}
+        />
         <RedirectItem title="Saved" />
         <RedirectItem title="Payment" />
         <TouchableOpacity
