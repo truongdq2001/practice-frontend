@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {View, TouchableOpacity, StyleSheet, TextInput} from 'react-native';
 import {scale} from '../../hooks/scale';
 

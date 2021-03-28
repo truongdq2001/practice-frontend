@@ -7,17 +7,20 @@ import {
   StatusBar,
   FlatList,
   ScrollView,
+  TouchableOpacity,
 } from 'react-native';
 import CustomInput from '../../../components/customInput';
 import Icon from 'react-native-vector-icons/Feather';
-import {scale} from '../../../hooks/scale';
 import {colors} from '../../../themes/colors';
 import styles from './styles';
 import BoxIcon from '../../../components/boxIcon/';
 import HashTag from '../../../components/HashTag';
 import CardCourse from './components/CardCourse';
 import {dataCourse} from './data';
+import {useNavigation} from '@react-navigation/native';
+import {ROUTERS} from '../../../router/routerType';
 export default function CourseScreen() {
+  const {navigate} = useNavigation();
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={styles.root}>
@@ -30,10 +33,16 @@ export default function CourseScreen() {
           </View>
           <BoxIcon icon={<Icon name="bell" size={25} />} border size={50} />
         </View>
-        <CustomInput
-          placeholder="Search course"
-          rightIcon={<Icon name="search" size={30} />}
-        />
+        <TouchableOpacity
+          onPress={() => navigate(ROUTERS.SEARCH_RESULT)}
+          activeOpacity={1}>
+          <CustomInput
+            styleInput={{borderWidth: 1}}
+            placeholder="Search course"
+            editable={false}
+            rightIcon={<Icon name="search" size={30} />}
+          />
+        </TouchableOpacity>
         <View style={styles.viewCategory}>
           <Text style={styles.labelCategory}>Category : </Text>
           <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
@@ -54,6 +63,7 @@ export default function CourseScreen() {
           keyExtractor={item => item.idCard + ''}
           renderItem={({item}) => <CardCourse {...item} />}
           showsVerticalScrollIndicator={false}
+          scrollEnabled={true}
         />
       </View>
     </TouchableWithoutFeedback>

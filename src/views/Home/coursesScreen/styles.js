@@ -49,5 +49,6 @@ export default StyleSheet.create({
   viewFlat: {
     width: '100%',
     height: '100%',
+    zIndex: 999,
   },
 });
