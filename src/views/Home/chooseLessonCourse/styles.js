@@ -9,10 +9,11 @@ export default StyleSheet.create({
     backgroundColor: colors.white,
     alignItems: 'center',
   },
+
   viewBanner: {
     width: '100%',
-    paddingHorizontal: scale(16),
     marginVertical: scale(16),
+    paddingHorizontal: scale(16),
   },
   wrapperBanner: {
     borderRadius: scale(16),
@@ -26,7 +27,7 @@ export default StyleSheet.create({
     height: scale(250),
   },
   viewVideo: {
-    width: width,
+    width: '100%',
     height: '100%',
     position: 'relative',
   },

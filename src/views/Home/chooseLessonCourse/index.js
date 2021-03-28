@@ -14,6 +14,7 @@ import ProgressBar from '../../../lib/ProgressBar';
 import * as Progress from 'react-native-progress';
 import {ScrollView} from 'react-native';
 import Video from 'react-native-video';
+import {scale} from '../../../hooks/scale';
 const width = Dimensions.get('window').width;
 export default function ChooseLessonCourse() {
   const {goBack, navigate} = useNavigation();
@@ -39,53 +40,55 @@ export default function ChooseLessonCourse() {
     );
   }
   return (
-    <ScrollView showsVerticalScrollIndicator={false}>
-      <View style={styles.root}>
-        <View style={{height: 50}} />
-        <StatusBar backgroundColor={colors.white} barStyle="dark-content" />
-        <CustomHeader
-          title="HTML"
-          childrenLeft={
-            <BoxIcon
-              size={40}
-              border
-              action={() => goBack()}
-              icon={<Icon name="chevron-left" size={25} />}
-            />
-          }
-        />
-        <View style={styles.viewBanner}>
-          <View style={styles.wrapperBanner}>
-            <View style={styles.viewBannerTop}>
-              <View style={styles.viewVideo}>
-                <Video
-                  style={styles.video}
-                  source={{uri: 'https://www.w3schools.com/html/mov_bbb.mp4'}}
-                  paused={isRunVideo}
-                />
-              </View>
+    <View style={styles.root}>
+      <View style={{height: 50}} />
+      <StatusBar backgroundColor={colors.white} barStyle="dark-content" />
+      <CustomHeader
+        title="HTML"
+        childrenLeft={
+          <BoxIcon
+            size={40}
+            border
+            action={() => goBack()}
+            icon={<Icon name="chevron-left" size={25} />}
+          />
+        }
+      />
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <View style={{width: '100%'}}>
+          <View style={styles.viewBanner}>
+            <View style={styles.wrapperBanner}>
+              <View style={styles.viewBannerTop}>
+                <View style={styles.viewVideo}>
+                  <Video
+                    style={styles.video}
+                    source={{uri: 'https://www.w3schools.com/html/mov_bbb.mp4'}}
+                    paused={isRunVideo}
+                  />
+                </View>
 
-              <TouchableOpacity
-                onPress={() => setIsRunVideo(!isRunVideo)}
-                style={styles.btnPlay}>
-                <Image source={images.iconPlay} />
-              </TouchableOpacity>
-            </View>
-            <View style={styles.viewBannerBottom}>
-              <Text style={styles.labelBanner}>HTML</Text>
-              <Text style={styles.subLabelBanner}>
-                Advanced web applications
-              </Text>
+                <TouchableOpacity
+                  onPress={() => setIsRunVideo(!isRunVideo)}
+                  style={styles.btnPlay}>
+                  <Image source={images.iconPlay} />
+                </TouchableOpacity>
+              </View>
+              <View style={styles.viewBannerBottom}>
+                <Text style={styles.labelBanner}>HTML</Text>
+                <Text style={styles.subLabelBanner}>
+                  Advanced web applications
+                </Text>
+              </View>
             </View>
           </View>
+          <View style={styles.viewBody}>
+            <CourseTag />
+            <CourseTag />
+            <CourseTag />
+            <CourseTag />
+          </View>
         </View>
-        <View style={styles.viewBody}>
-          <CourseTag />
-          <CourseTag />
-          <CourseTag />
-          <CourseTag />
-        </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
