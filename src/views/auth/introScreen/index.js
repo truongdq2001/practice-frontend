@@ -5,6 +5,7 @@ import styles from './styles';
 import {images} from '../../../assets/images';
 import {useNavigation} from '@react-navigation/native';
 import {ROUTERS} from '../../../router/routerType';
+import {colors} from '../../../themes/colors';
 const dataIntro = [
   {
     key: 'one',
@@ -67,7 +68,11 @@ export default function INTRO_SCREEN() {
 
   return (
     <View style={{flex: 1}}>
-      <StatusBar translucent backgroundColor="transparent" />
+      <StatusBar
+        translucent
+        backgroundColor={colors.white}
+        barStyle="dark-content"
+      />
       <AppIntroSlider
         keyExtractor={item => item.title}
         renderItem={renderItem}
