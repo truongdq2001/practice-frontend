@@ -57,6 +57,8 @@ export default function SearchResult() {
               placeholder="Search course"
               styleInput={styles.customStyleInput}
               value={valueSearch}
+              returnKeyType="search"
+              onSubmitEditing={() => handleSearchCourse()}
               onChangeText={e => setValueSearch(e)}
               rightIcon={<Icon name="search" size={25} />}
               onPressRight={() => handleSearchCourse()}
@@ -64,7 +66,7 @@ export default function SearchResult() {
           </View>
         </View>
         <View style={styles.viewTextResult}>
-          <Text style={styles.textResult}>2 Search Result</Text>
+          <Text style={styles.textResult}>{courses.length} Search Result</Text>
         </View>
         {!!courses.length && (
           <FlatList
