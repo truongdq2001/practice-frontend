@@ -32,7 +32,7 @@ export default function SettingScreen() {
           childrenLeft={
             <BoxIcon
               icon={<Icon name="chevron-left" size={25} color={colors.black} />}
-              size={37.5}
+              size={40}
               border
             />
           }

@@ -14,4 +14,8 @@ export const images = {
   course3: require('./sources/Course3.png'),
   course4: require('./sources/Course4.png'),
   courseDetail: require('./sources/courseDetail.png'),
+  iconPlay: require('./sources/iconPlay.png'),
+  imageTag1: require('./sources/ImageTag1.png'),
+  imageTag2: require('./sources/ImageTag2.png'),
+  imageTag3: require('./sources/ImageTag3.png'),
 };

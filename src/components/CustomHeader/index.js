@@ -7,7 +7,7 @@ import {colors} from '../../themes/colors';
 const styles = StyleSheet.create({
   rootHeader: {
     width: '100%',
-    height: scale(40),
+    height: scale(50),
     backgroundColor: colors.white,
     flexDirection: 'row',
     alignItems: 'center',

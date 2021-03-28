@@ -28,7 +28,7 @@ export default function ProfileScreen() {
         childrenLeft={
           <BoxIcon
             border
-            size={37.5}
+            size={40}
             icon={<Icon name="chevron-left" size={25} />}
           />
         }
@@ -45,7 +45,10 @@ export default function ProfileScreen() {
           title="Your Courses"
           action={() => navigate(ROUTERS.YOUR_COURSES)}
         />
-        <RedirectItem title="Saved" />
+        <RedirectItem
+          title="Saved"
+          action={() => navigate(ROUTERS.CHOOSE_LESSON_COURSES)}
+        />
         <RedirectItem title="Payment" />
         <TouchableOpacity
           onPress={() => navigate(ROUTERS.AUTH_STACK)}
