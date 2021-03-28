@@ -42,10 +42,7 @@ export default function SignIn() {
         barStyle="dark-content"
       />
       <View style={stylesCommon.viewStatusBar} />
-      <KeyboardAvoidingView
-        behavior="position"
-        keyboardVerticalOffset={-180}
-        style={{backgroundColor: '#fff'}}>
+      <KeyboardAvoidingView style={{backgroundColor: '#fff'}}>
         <View style={styles.root}>
           <View style={styles.viewLogo}>
             <Image source={images.logoSignIn} />

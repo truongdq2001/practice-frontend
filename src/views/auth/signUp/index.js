@@ -40,10 +40,7 @@ export default function SignUp() {
         barStyle="dark-content"
       />
       <View style={stylesCommon.viewStatusBar} />
-      <KeyboardAvoidingView
-        behavior="position"
-        keyboardVerticalOffset={-150}
-        style={{backgroundColor: '#fff'}}>
+      <KeyboardAvoidingView style={{backgroundColor: '#fff'}}>
         <View style={styles.root}>
           <TouchableOpacity
             onPress={() => navigate(ROUTERS.SIGNIN)}

@@ -5,6 +5,8 @@ import homeStack from './homeStack';
 import SearchResult from '../views/Home/coursesScreen/searchResult';
 import CourseDetail from '../views/Home/coursesScreen/courseDetail';
 import YourCourse from '../views/Home/profileScreen/yourCourse';
+import ChooseLessonCourse from '../views/Home/chooseLessonCourse';
+import SaveCoursesScreen from '../views/Home/profileScreen/saveCourseScreen';
 export default function MAIN_STACK() {
   const Stack = createStackNavigator();
   return (
@@ -17,6 +19,14 @@ export default function MAIN_STACK() {
       <Stack.Screen name={ROUTERS.SEARCH_RESULT} component={SearchResult} />
       <Stack.Screen name={ROUTERS.COURSE_DETAIL} component={CourseDetail} />
       <Stack.Screen name={ROUTERS.YOUR_COURSES} component={YourCourse} />
+      <Stack.Screen
+        name={ROUTERS.CHOOSE_LESSON_COURSES}
+        component={ChooseLessonCourse}
+      />
+      <Stack.Screen
+        name={ROUTERS.SAVE_COURSES_SCREEN}
+        component={SaveCoursesScreen}
+      />
     </Stack.Navigator>
   );
 }
