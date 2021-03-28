@@ -9,4 +9,5 @@ export const colors = {
   textSub: '#78746D',
   black: '#000000',
   normal: '#E9E9E9',
+  typography: '#F2F2F2',
 };

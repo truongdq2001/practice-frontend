@@ -9,4 +9,8 @@ export const images = {
   logoSignUp: require('./sources/background_sign_up.png'),
   iconBack: require('./sources/goBackIcon.png'),
   logoSetting: require('./sources/logoSetting.png'),
+  course1: require('./sources/Course1.png'),
+  course2: require('./sources/Course2.png'),
+  course3: require('./sources/Course3.png'),
+  course4: require('./sources/Course4.png'),
 };

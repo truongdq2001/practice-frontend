@@ -9,7 +9,6 @@ import TabItem from './components/tabItem';
 import {useNavigation} from '@react-navigation/native';
 import {ScrollView} from 'react-native';
 import ToggleSwitch from '../../../lib/ToggleSwitch/ToggleSwitch';
-import {color} from 'react-native-reanimated';
 import BoxIcon from '../../../components/boxIcon';
 export default function SettingScreen() {
   const {navigate, goBack} = useNavigation();
@@ -32,8 +31,8 @@ export default function SettingScreen() {
           actionLeft={() => goBack()}
           childrenLeft={
             <BoxIcon
-              icon={<Icon name="chevron-left" size={20} color={colors.black} />}
-              size={40}
+              icon={<Icon name="chevron-left" size={25} color={colors.black} />}
+              size={37.5}
               border
             />
           }

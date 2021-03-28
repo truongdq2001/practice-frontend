@@ -28,7 +28,7 @@ export default function ProfileScreen() {
         childrenLeft={
           <BoxIcon
             border
-            size={40}
+            size={37.5}
             icon={<Icon name="chevron-left" size={25} />}
           />
         }
