@@ -21,7 +21,14 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ({styleButton, styleText, onPress, text, icon}) => {
+export default ({
+  styleButton,
+  styleText,
+  onPress,
+  text,
+  icon,
+  activeOpacity = 0,
+}) => {
   let rootStyleButton = [styles.viewButton];
   let rootStyleTextButton = [styles.textButton];
 
@@ -33,7 +40,10 @@ export default ({styleButton, styleText, onPress, text, icon}) => {
   }
 
   return (
-    <TouchableOpacity onPress={onPress} style={rootStyleButton}>
+    <TouchableOpacity
+      activeOpacity={activeOpacity}
+      onPress={onPress}
+      style={rootStyleButton}>
       {icon}
       <Text style={rootStyleTextButton}>{text}</Text>
     </TouchableOpacity>

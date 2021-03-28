@@ -29,7 +29,7 @@ export default StyleSheet.create({
     paddingVertical: scale(4),
     paddingHorizontal: scale(12),
     borderRadius: scale(12),
-    maxWidth: scale(70),
+    width: scale(60),
     backgroundColor: colors.border_bg,
     alignItems: 'center',
     justifyContent: 'center',
