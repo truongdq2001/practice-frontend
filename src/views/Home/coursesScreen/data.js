@@ -9,6 +9,8 @@ export const dataCourse = [
     title: 'title 1',
     hours: 9275,
     price: 52,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '2',
@@ -18,6 +20,8 @@ export const dataCourse = [
     title: 'title 2',
     hours: 61483,
     price: 11,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '3',
@@ -27,6 +31,8 @@ export const dataCourse = [
     title: 'title 3',
     hours: 53323,
     price: 64,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '4',
@@ -36,6 +42,9 @@ export const dataCourse = [
     title: 'title 4',
     hours: 30154,
     price: 5,
+
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '5',
@@ -45,6 +54,8 @@ export const dataCourse = [
     title: 'title 5',
     hours: 60330,
     price: 79,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '6',
@@ -54,6 +65,8 @@ export const dataCourse = [
     title: 'title 6',
     hours: 16679,
     price: 60,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '7',
@@ -64,6 +77,8 @@ export const dataCourse = [
     title: 'title 7',
     hours: 79654,
     price: 68,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '8',
@@ -73,6 +88,8 @@ export const dataCourse = [
     title: 'title 8',
     hours: 61298,
     price: 97,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '9',
@@ -82,6 +99,8 @@ export const dataCourse = [
     title: 'title 9',
     hours: 34741,
     price: 18,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '10',
@@ -97,6 +116,8 @@ export const dataCourse = [
     title: 'title 11',
     hours: 16474,
     price: 72,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '12',
@@ -106,6 +127,8 @@ export const dataCourse = [
     title: 'title 12',
     hours: 99048,
     price: 36,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '13',
@@ -115,6 +138,8 @@ export const dataCourse = [
     title: 'title 13',
     hours: 68950,
     price: 81,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '14',
@@ -124,6 +149,8 @@ export const dataCourse = [
     title: 'title 14',
     hours: 92845,
     price: 14,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '15',
@@ -133,6 +160,8 @@ export const dataCourse = [
     title: 'title 15',
     hours: 27198,
     price: 91,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '16',
@@ -143,6 +172,8 @@ export const dataCourse = [
     title: 'title 16',
     hours: 42791,
     price: 66,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '17',
@@ -152,6 +183,8 @@ export const dataCourse = [
     title: 'title 17',
     hours: 91506,
     price: 22,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '18',
@@ -161,6 +194,8 @@ export const dataCourse = [
     title: 'title 18',
     hours: 30996,
     price: 59,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '19',
@@ -170,6 +205,8 @@ export const dataCourse = [
     title: 'title 19',
     hours: 7360,
     price: 53,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
   {
     id: '20',
@@ -179,5 +216,7 @@ export const dataCourse = [
     title: 'title 20',
     hours: 42884,
     price: 74,
+    description: `You can launch a new career in web develop-
+ment today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust.`,
   },
 ];

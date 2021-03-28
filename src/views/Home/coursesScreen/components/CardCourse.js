@@ -1,9 +1,9 @@
 import React from 'react';
-import {Image} from 'react-native';
-import {View, Text, StyleSheet} from 'react-native';
+import {Image, TouchableOpacity, View, Text, StyleSheet} from 'react-native';
 import {scale} from '../../../../hooks/scale';
 import {colors} from '../../../../themes/colors';
-
+import {useNavigation} from '@react-navigation/native';
+import {ROUTERS} from '../../../../router/routerType';
 const styles = StyleSheet.create({
   container: {
     width: '100%',
@@ -69,8 +69,16 @@ const styles = StyleSheet.create({
 
 export default function CardCourse(props) {
   const {imageCard, price, hours, title, subTitle} = props;
+  const {navigate} = useNavigation();
   return (
-    <View style={styles.container}>
+    <TouchableOpacity
+      activeOpacity={1}
+      onPress={() =>
+        navigate(ROUTERS.COURSE_DETAIL, {
+          course: props,
+        })
+      }
+      style={styles.container}>
       <View style={styles.viewCardTop}>
         <Image source={imageCard} style={styles.styleImage} />
         {price && (
@@ -84,6 +92,6 @@ export default function CardCourse(props) {
         <Text style={styles.textTitle}>{title}</Text>
         <Text style={styles.textSub}>{subTitle}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 }
