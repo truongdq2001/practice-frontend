@@ -29,7 +29,14 @@ const styles = StyleSheet.create({
     marginTop: scale(50),
   },
 });
-export default function CommonResult() {
+export default function CommonResult({
+  title,
+  image,
+  message,
+  subMessage,
+  toRoute,
+  currentRoute,
+}) {
   const {goBack, navigate} = useNavigation();
   return (
     <View style={styles.root}>
