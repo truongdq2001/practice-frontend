@@ -4,6 +4,8 @@ import styles from './styles';
 import {images} from '../../../../assets/images';
 import CustomButton from '../../../../components/customButton';
 import {colors} from '../../../../themes/colors';
+import {useNavigation} from '@react-navigation/native';
+import {ROUTERS} from '../../../../router/routerType';
 export default function CardQuiz({
   image,
   quizName,
@@ -11,6 +13,7 @@ export default function CardQuiz({
   labelSubQuiz,
   route,
 }) {
+  const {navigate} = useNavigation();
   return (
     <View style={styles.viewCardQuiz}>
       <Image source={images.course2} />
@@ -26,6 +29,7 @@ export default function CardQuiz({
             styleText={{color: colors.black}}
             styleButton={styles.customBtn}
             text="Begin"
+            onPress={() => navigate(ROUTERS.TEST_QUESTION)}
           />
         </View>
       </View>

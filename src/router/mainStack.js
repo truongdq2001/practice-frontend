@@ -10,6 +10,7 @@ import SaveCoursesScreen from '../views/Home/profileScreen/saveCourseScreen';
 import CourseLesson from '../views/Home/courseLesson';
 import tabLessonCourse from './tabLessonCourse';
 import CommonResult from '../views/Home/CommonResult';
+import TestQuestion from '../views/Home/TestQuestion';
 export default function MAIN_STACK() {
   const Stack = createStackNavigator();
   return (
@@ -35,6 +36,7 @@ export default function MAIN_STACK() {
         component={tabLessonCourse}
       />
       <Stack.Screen name={ROUTERS.COMMON_RESULT} component={CommonResult} />
+      <Stack.Screen name={ROUTERS.TEST_QUESTION} component={TestQuestion} />
     </Stack.Navigator>
   );
 }
