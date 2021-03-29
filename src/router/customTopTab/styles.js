@@ -6,6 +6,7 @@ export default StyleSheet.create({
   root: {
     width: '100%',
     backgroundColor: colors.white,
+    paddingBottom: scale(16),
   },
   viewTittle: {
     width: '100%',

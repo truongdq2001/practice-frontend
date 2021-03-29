@@ -7,13 +7,22 @@ export default StyleSheet.create({
     width: '100%',
     height: '100%',
     backgroundColor: colors.white,
+    paddingHorizontal: scale(16),
   },
-  viewTittle: {
+  contain: {
     width: '100%',
-    flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginVertical: scale(12),
+    marginTop: scale(16),
+    position: 'relative',
+  },
+  viewBanner: {
+    width: '100%',
+    alignItems: 'center',
+    position: 'relative',
+  },
+  viewContent: {
+    width: '100%',
+    marginTop: scale(20),
   },
   title: {
     fontSize: scale(24),
@@ -21,45 +30,14 @@ export default StyleSheet.create({
     color: colors.black,
     fontWeight: '700',
   },
+  btnPlay: {
+    position: 'absolute',
+    right: scale(10),
+    bottom: scale(10),
+  },
   subTitle: {
     fontSize: scale(16),
     lineHeight: scale(24),
     color: colors.black,
-  },
-  viewTopTab: {
-    width: '100%',
-    height: 50,
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: scale(16),
-  },
-  btnTopTab: {
-    width: '32%',
-    height: '100%',
-    backgroundColor: colors.primary2,
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  wrapperBtn: {
-    width: '100%',
-    height: '100%',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  textBtnTopTab: {
-    fontSize: scale(16),
-    lineHeight: scale(26),
-    color: colors.black,
-  },
-  radiusLeft: {
-    borderTopLeftRadius: scale(16),
-    borderBottomLeftRadius: scale(16),
-  },
-  radiusRight: {
-    borderTopRightRadius: scale(16),
-    borderBottomRightRadius: scale(16),
   },
 });
