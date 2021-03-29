@@ -18,4 +18,5 @@ export const images = {
   imageTag1: require('./sources/ImageTag1.png'),
   imageTag2: require('./sources/ImageTag2.png'),
   imageTag3: require('./sources/ImageTag3.png'),
+  imageSaved: require('./sources/imageSaved.png'),
 };

@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   styleInput: {
     flex: 1,
     borderColor: '#BEBAB3',
-    borderWidth: StyleSheet.hairlineWidth,
+    borderWidth: 1,
     borderStyle: 'solid',
     borderRadius: scale(12),
     paddingVertical: scale(16),

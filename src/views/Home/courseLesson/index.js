@@ -2,14 +2,16 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Image, ScrollView} from 'react-native';
 import styles from './styles';
 import {images} from '../../../assets/images';
-export default function CourseLesson() {
+export default function CourseLesson({navigation}) {
   return (
     <View style={styles.root}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.contain}>
           <View style={styles.viewBanner}>
             <Image source={images.course4} />
-            <TouchableOpacity style={styles.btnPlay}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('COMMON_RESULT')}
+              style={styles.btnPlay}>
               <Image source={images.iconPlay} />
             </TouchableOpacity>
           </View>
