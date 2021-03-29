@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {scale} from '../../hooks/scale';
+import {colors} from '../../themes/colors';
 export default function CustomTabs({state, descriptors, navigation}) {
   return (
     <View style={styles.rootTab}>
@@ -45,15 +46,7 @@ const styles = StyleSheet.create({
   rootTab: {
     height: scale(100),
     width: '100%',
-    backgroundColor: '#ffffff',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 6,
-    },
-    shadowOpacity: 0.39,
-    shadowRadius: 8.3,
-    elevation: 13,
+    backgroundColor: colors.white,
     borderTopLeftRadius: scale(20),
     borderTopRightRadius: scale(20),
     overflow: 'hidden',
@@ -65,6 +58,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: scale(50),
+    backgroundColor: colors.white,
+    overflow: 'hidden',
+    shadowColor: colors.black,
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.39,
+    shadowRadius: 8.3,
+    elevation: 13,
   },
   viewTab: {
     flexDirection: 'column',

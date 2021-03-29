@@ -10,4 +10,5 @@ export const colors = {
   black: '#000000',
   normal: '#E9E9E9',
   typography: '#F2F2F2',
+  primary2: '#F8F2EE',
 };

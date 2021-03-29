@@ -11,17 +11,19 @@ import {Image} from 'react-native';
 import {TouchableOpacity} from 'react-native';
 import {images} from '../../../assets/images';
 import ProgressBar from '../../../lib/ProgressBar';
-import * as Progress from 'react-native-progress';
 import {ScrollView} from 'react-native';
 import Video from 'react-native-video';
-import {scale} from '../../../hooks/scale';
+import {ROUTERS} from '../../../router/routerType';
 const width = Dimensions.get('window').width;
 export default function ChooseLessonCourse() {
   const {goBack, navigate} = useNavigation();
   const [isRunVideo, setIsRunVideo] = useState(false);
-  function CourseTag({image, title, correct, total}) {
+  function CourseTag({image, title, correct, total, action}) {
     return (
-      <TouchableOpacity activeOpacity={0.8} style={styles.containTag}>
+      <TouchableOpacity
+        onPress={action}
+        activeOpacity={0.8}
+        style={styles.containTag}>
         <View style={styles.viewTagImage}>
           <Image source={images.imageTag1} style={styles.imageTag} />
         </View>
@@ -82,7 +84,7 @@ export default function ChooseLessonCourse() {
             </View>
           </View>
           <View style={styles.viewBody}>
-            <CourseTag />
+            <CourseTag action={() => navigate(ROUTERS.TAB_LESSON_COURSE)} />
             <CourseTag />
             <CourseTag />
             <CourseTag />

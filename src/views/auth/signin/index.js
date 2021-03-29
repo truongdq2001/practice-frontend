@@ -7,8 +7,8 @@ import {
   Keyboard,
   TouchableOpacity,
   KeyboardAvoidingView,
+  TouchableWithoutFeedback,
 } from 'react-native';
-import {TouchableWithoutFeedback} from 'react-native-gesture-handler';
 import {images} from '../../../assets/images';
 import styles from './styles';
 import {useNavigation} from '@react-navigation/native';
@@ -36,14 +36,14 @@ export default function SignIn() {
   );
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <StatusBar
-        translucent
-        backgroundColor="transparent"
-        barStyle="dark-content"
-      />
-      <View style={stylesCommon.viewStatusBar} />
       <KeyboardAvoidingView style={{backgroundColor: '#fff'}}>
         <View style={styles.root}>
+          <StatusBar
+            translucent
+            backgroundColor="transparent"
+            barStyle="dark-content"
+          />
+          <View style={stylesCommon.viewStatusBar} />
           <View style={styles.viewLogo}>
             <Image source={images.logoSignIn} />
           </View>
